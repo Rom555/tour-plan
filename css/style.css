@@ -651,7 +651,7 @@ template {
     background-color: #fff;
     cursor: pointer;
   }
-  .menu__line {
+  .menu-button__line {
     width: 16px;
     height: 1px;
     background-color: #333333;
