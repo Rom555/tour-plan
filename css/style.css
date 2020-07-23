@@ -411,6 +411,7 @@ template {
   color: inherit;
   text-decoration: none;
   text-transform: uppercase;
+  font-weight: bold;
   font-size: 14px;
   line-height: 18px;
 }
@@ -542,6 +543,7 @@ template {
 
 .hotel-name {
   margin: 0;
+  font-weight: bold;
   font-size: 24px;
   line-height: 30px;
 }
@@ -581,6 +583,7 @@ template {
 
 .offer {
   padding: 4px 9px;
+  font-weight: 600;
   font-size: 10px;
   line-height: 13px;
   background-color: #EC1F46;
@@ -598,11 +601,13 @@ template {
 }
 
 .rating__text {
+  font-weight: 600;
   font-size: 8px;
   line-height: 10px;
 }
 
 .rating__count {
+  font-weight: bold;
   font-size: 14px;
   line-height: 18px;
 }
@@ -671,7 +676,7 @@ template {
   width: 350px;
   min-height: 210px;
   padding: 28px;
-  font-family: Nunito;
+  font-family: 'Nunito', sans-serif;
   font-style: normal;
   color: #ffffff;
   background-color: #0A223D;
