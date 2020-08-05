@@ -1544,6 +1544,12 @@ template {
   .navbar-menu__item--mobile--visible {
     display: block;
   }
+  .navbar-menu__item:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  .navbar-menu__item:nth-child(2) {
+    margin-bottom: 40px;
+  }
   .menu-button {
     display: -webkit-box;
     display: -ms-flexbox;
