@@ -1298,7 +1298,7 @@ template {
   margin-top: 95px;
 }
 
-.footer-bottom-wrapper {
+.footer-bottom {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1472,7 +1472,7 @@ template {
   .footer__bottom {
     margin-top: 56px;
   }
-  .footer-bottom-wrapper {
+  .footer-bottom {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1741,7 +1741,7 @@ template {
         -ms-flex-order: 1;
             order: 1;
   }
-  .footer-bottom-wrapper {
+  .footer-bottom {
     display: block;
   }
   .footer-bottom__links {
