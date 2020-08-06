@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -164,7 +165,12 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="swiper-container hotel-slider hotel__slider">
+          <div
+            class="swiper-container hotel-slider hotel__slider"
+            data-aos="fade-right"
+            data-aos-duration="500"
+            data-aos-anchor-placement="center-bottom"
+          >
             <div class="swiper-wrapper">
               <div class="swiper-slide hotel-slider__item">
                 <img
@@ -220,7 +226,12 @@
           <!-- /.swiper-container -->
 
           <div class="hotel-right">
-            <div class="booking">
+            <div
+              class="booking"
+              data-aos="fade-left"
+              data-aos-duration="700"
+              data-aos-anchor-placement="bottom-bottom"
+            >
               <div class="booking__info">
                 <div class="booking__price">
                   <span class="booking__price-start">price starts as</span>
@@ -266,7 +277,13 @@
             </div>
             <!-- /.booking -->
 
-            <div class="map" id="map"></div>
+            <div
+              class="map"
+              id="map"
+              data-aos="fade-left"
+              data-aos-duration="900"
+              data-aos-anchor-placement="top-bottom"
+            ></div>
           </div>
           <!-- /.hotel-right -->
         </div>
@@ -444,7 +461,12 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-up"
+            data-aos-duration="300"
+            data-aos-anchor-placement="center-bottom"
+          >
             <img
               src="img/activity-1.jpg"
               alt="The curious corner of chamarel"
@@ -455,7 +477,12 @@
           </div>
           <!-- /.card -->
 
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-up"
+            data-aos-duration="500"
+            data-aos-anchor-placement="center-bottom"
+          >
             <img
               src="img/activity-2.jpg"
               alt="Gymkhana club golf course"
@@ -466,7 +493,12 @@
           </div>
           <!-- /.card -->
 
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-up"
+            data-aos-duration="700"
+            data-aos-anchor-placement="center-bottom"
+          >
             <img
               src="img/activity-3.jpg"
               alt="TTamarind falls hiking trip - full day"
@@ -477,7 +509,12 @@
           </div>
           <!-- /.card -->
 
-          <div class="card activities__card">
+          <div
+            class="card activities__card"
+            data-aos="flip-up"
+            data-aos-duration="900"
+            data-aos-anchor-placement="center-bottom"
+          >
             <img
               src="img/activity-4.jpg"
               alt="The blue marine discovery quest"
@@ -750,6 +787,7 @@
     <script src="js/map.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
