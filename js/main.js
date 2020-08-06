@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //Слайдер
   var hotelSlider = new Swiper(".hotel-slider", {
     // Optional parameters
     loop: true,
@@ -27,6 +28,7 @@ $(document).ready(function () {
     },
   });
 
+  //Модальное окно
   var menuButton = $(".menu-button");
 
   menuButton.on("click", function () {
@@ -55,4 +57,27 @@ $(document).ready(function () {
 
   modalButton.on("click", openModal);
   closeModalButton.on("click", closeModal);
+
+  //Обработка форм
+  $(".form").each(function () {
+    $(this).validate({
+      errorClass: "invalid",
+      messages: {
+        name: {
+          required: "Please specify your name",
+          minlength: "Name must be at least 2 letters",
+        },
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com",
+        },
+        phone: {
+          required: "Phone number is required",
+        },
+        search: {
+          required: "Please enter information for search",
+        },
+      },
+    });
+  });
 });

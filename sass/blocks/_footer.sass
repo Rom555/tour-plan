@@ -36,8 +36,8 @@
     text-transform: uppercase
     &--inline
       margin: 0 43px 0 0
-    &--mb-3
-      margin-bottom: 30px
+    &--mb-15
+      margin-bottom: 15px
   &__ul
     padding: 0
     margin: 0
@@ -54,15 +54,25 @@
     &-wrapper
       min-width: 40px
   &__text
+    margin-top: 30px
     margin-bottom: 22px
     color: $footer-text-color
   &__link
     text-decoration: none
     color: inherit
   &__input
-    flex-basis: 48%
-    margin-bottom: 15px
+    width: 100%
+    &-group
+      flex-basis: 48%
+      margin-top: 15px
+    &-wrapper
+      width: 100%
+      display: flex
+      align-items: start
+      justify-content: space-between
+      flex-wrap: wrap
   &__message
+    margin-top: 15px
     margin-bottom: 23px
   &__info
     font-weight: bold

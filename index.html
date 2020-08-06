@@ -26,13 +26,17 @@
 
           <form
             action=""
-            class="search navbar__search navbar__search--mobile--hiden"
+            class="form search navbar__search navbar__search--mobile--hiden"
           >
-            <input
-              type="text"
-              class="search__input"
-              placeholder="Search Location"
-            />
+            <div class="search__input-wrapper">
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Search Location"
+                name="search"
+                required
+              />
+            </div>
             <button class="search__button">
               <img src="img/search.svg" alt="Icon: search" />
             </button>
@@ -71,12 +75,16 @@
               </a>
             </li>
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
-              <form action="" class="search navbar__search">
-                <input
-                  type="text"
-                  class="search__input"
-                  placeholder="Search Location"
-                />
+              <form action="" class="form search navbar__search">
+                <div class="search__input-wrapper">
+                  <input
+                    type="text"
+                    class="search__input"
+                    placeholder="Search Location"
+                    name="search"
+                    required
+                  />
+                </div>
                 <button class="search__button">
                   <img src="img/search.svg" alt="Icon: search" />
                 </button>
@@ -280,11 +288,13 @@
             Newsletter
           </span>
         </h2>
-        <form action="" class="subscribe newsletter__subscribe">
+        <form action="" class="form subscribe newsletter__subscribe">
           <input
-            type="text"
+            type="email"
             class="subscribe__input"
             placeholder="Your email address"
+            name="email"
+            required
           />
           <button class="subscribe__button">
             Send
@@ -583,7 +593,7 @@
           </div>
           <!-- /.footer__list -->
           <div class="footer__contact-details">
-            <h3 class="footer__title footer__title--mb-3">Contact Details</h3>
+            <h3 class="footer__title">Contact Details</h3>
             <p class="footer__text">
               Feel free to contact us by phone, email or by our contact form
             </p>
@@ -626,22 +636,32 @@
           </div>
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
-            <h3 class="footer__title footer__title--mb-3 footer__title--mb-1">
+            <h3 class="footer__title footer__title--mb-15">
               Send us a message
             </h3>
             <form action="send.php" method="POST" class="form footer__form">
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Your Full Name*"
-                name="name"
-              />
-              <input
-                type="text"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
+              <div class="footer__input-wrapper">
+                <div class="footer__input-group">
+                  <input
+                    type="text"
+                    class="input footer__input"
+                    placeholder="Your Full Name*"
+                    name="name"
+                    required
+                  />
+                </div>
+                <!-- /.footer__input-group -->
+                <div class="footer__input-group">
+                  <input
+                    type="tel"
+                    class="input footer__input"
+                    placeholder="Phone Number*"
+                    name="phone"
+                    required
+                  />
+                </div>
+                <!-- /.footer__input-group -->
+              </div>
               <textarea
                 cols="30"
                 rows="10"
@@ -683,27 +703,31 @@
         <a href="#" class="modal__close">
           <img src="img/close.svg" alt="Icon: close" />
         </a>
-        <h3 class="modal__title modal__title--mb-3 modal__title--mb-1">
+        <h3 class="modal__title modal__title--mb-15">
           Send us a message
         </h3>
-        <form action="send.php" method="POST" class="form modal__form">
+        <form action="" method="POST" class="form modal__form">
           <input
             type="text"
             class="input modal__input"
             placeholder="Your Full Name*"
             name="name"
+            required
+            minlength="2"
           />
           <input
-            type="text"
+            type="tel"
             class="input modal__input"
             placeholder="Phone Number*"
             name="phone"
+            required
           />
           <input
-            type="text"
+            type="email"
             class="input modal__input"
             placeholder="Email*"
             name="email"
+            required
           />
           <textarea
             cols="30"
@@ -720,10 +744,11 @@
     </div>
     <!-- /.modal -->
 
+    <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=ff897426-85da-4510-bdb1-f1a2f8d89e96"></script>
     <script src="js/map.js"></script>
-    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/main.js"></script>
   </body>
